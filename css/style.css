@@ -1,0 +1,682 @@
+/*....................................................................
+		File Name: style.css
+.....................................................................*/
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Exo+2:wght@300;400;500;600;700&family=Heebo:wght@200;300&family=Inter&family=Khula:wght@400;600;700;800&family=Lekton&family=Montserrat:wght@500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Space+Mono&family=Syncopate:wght@400;700&family=Work+Sans:wght@500&display=swap');
+
+/*--------------------------------------------------------------
+				***General***
+--------------------------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	outline: none !important;
+	box-sizing: border-box;
+}
+html,
+body {
+	background: #fff;
+	color: #2F2F2F;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: normal;
+	overflow-x: hidden;
+	font-family: 'Poppins', sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+}
+a {
+	text-decoration: none !important;
+	outline: none !important;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;	
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	color: #000;
+}
+a:hover,
+a:active,
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+p {
+	padding: 0;
+	margin: 0 0 30px 0;
+	font-size: 15px;
+	font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 400;
+	margin: 0 0 20px 0;
+	padding: 0;
+	line-height: 1.2;
+	font-family: 'Poppins', sans-serif;
+	/*font-family: 'Khula', sans-serif;*/
+	/*font-family: 'Montserrat', sans-serif;*/
+}
+/*....................................................................
+		***header section start(index page)***
+.....................................................................*/
+/*...........heder top............*/
+.headerTop{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 15px;
+	width: 95%;
+	margin: 0 auto;
+}
+.headerTop .logoItem img.img1{
+	width: 110px;
+	padding-top: 5px;
+}
+.headerTop .logoItem img.img2{
+	width: 90px;
+}
+/*...........heder bottom............*/
+header .headerBottom{
+	padding: 10px 0px;
+	background: #0367AF;
+}
+.menuWrapper{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+/*..................desktop menu code end................*/
+.menuWrapper .menuLeft ul{
+	margin-bottom: 0;
+}
+.menuWrapper .menuLeft ul li{
+	
+}
+.menuWrapper .menuLeft ul li a{
+	color: white;
+	padding: 19px 5px;
+	border-top-right-radius: 5px;
+	transition: all .3s ease-in-out;
+	font-size: 15px;
+	font-family: 'SolaimanLipi';
+}
+.menuWrapper .menuLeft ul.desktopUl li a.active{
+	background: #7777E7;
+}
+
+.menuWrapper .menuLeft ul.desktopUl li a:hover{
+	background: #7777E7;
+}
+.menuRight a{
+	color: white;
+	font-size: 15px;
+	font-family: 'SolaimanLipi';
+}
+/*..................desktop menu code end................*/
+
+/*..................mobile menu must require code start................*/
+/* The sidepanel menu */
+.sidepanel{
+	height: 100%; /* Specify a height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0;
+	right: 0;
+	background-color: #0367AF; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	/* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+	position: absolute;
+	top: -10px;
+	right: 10px;
+	font-size: 35px;
+	margin-left: 50px;
+	color: white;
+}
+/*..................mobile menu must require code end................*/
+.menuLeft .sidepanel .sidepanelMenuItem ul{
+	padding: 20px;
+	padding-left: 20px;
+}
+.menuLeft .sidepanel .sidepanelMenuItem ul li{
+	margin-bottom: 15px;
+}
+.menuLeft .sidepanel .sidepanelMenuItem ul li a{
+	color: white;
+	font-size: 15px;
+	font-family: 'SolaimanLipi';
+	font-weight: bold;
+}
+.menuLeft .mobileButton a{
+	color: white;
+	font-size :15px;
+	font-family: 'SolaimanLipi';
+}
+/*..............header modal code start.............*/
+.close{
+	font-size: 27px;
+	font-weight: 800;
+	padding: 20px;
+	color: #000;
+}
+.modalHeader{
+	border-bottom: 0;
+	justify-content: center;
+	position: relative;
+}
+.modalHeader button{
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
+.modalFooter{
+	border-top: 0;
+}
+.form-wrapper{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.form-wrapper h3{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+}
+.form-control{
+	background: #E5E7EB;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}	
+.passwordWrap{
+	position: relative;
+}
+.passwordWrap span{
+	position: absolute;
+	top: 13px;
+	right: 11px;
+}
+.forgetWrap{
+	font-size: 17px;
+    text-align: right;
+    color: black;
+}
+.loginButton{
+	display: block;
+	text-align: center;
+	font-size : 15px;
+	color: white;
+	background: #374151;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	transition: all .5s ease;
+}
+.loginButton:hover{
+	color: #000;
+	background: #E5E7EB;
+}
+.noRegistation{
+	font-size: 14px;
+    text-align: center;
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 5px;
+}
+.registationLink{
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: black;
+}
+form select,form input,form h6,form a{
+	font-family: 'SolaimanLipi';
+}
+.formcontrol{
+	padding-top: 8px;
+}
+
+/*..............header modal code end.............*/
+/*...........when second modal open then scrollbar not scrolling.This code is better solution start...............*/
+.modal {
+  overflow-y:auto;
+}
+/*...........when second modal open then scrollbar not scrolling.This code is better solution end...............*/
+/*....................................................................
+		***topSlider section start(index page)***
+.....................................................................*/
+
+/*..........carousel fade code end..............*/
+.carousel-fade .carousel-item {
+ opacity: 0;
+ transition-duration: .9s;
+ transition-property: opacity;
+}
+
+.carousel-fade  .carousel-item.active,
+.carousel-fade  .carousel-item-next.carousel-item-left,
+.carousel-fade  .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-right {
+ opacity: 0;
+}
+
+.carousel-fade  .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-prev {
+ transform: translateX(0);
+ transform: translate3d(0, 0, 0);
+}
+/*..........carousel fade code end..............*/
+/*....................................................................
+		***apply section start(index page)***
+.....................................................................*/
+.applyWrap{
+	padding: 50px 0;
+	padding-bottom: 20px;
+	background: #0367AF;
+}
+.applyheadingWrap h2{
+	color: white;
+    text-align: left;
+    margin-bottom: 34px;
+	font-size: 30px;
+    font-weight: bold;
+}
+.applyBtnWrap{
+	text-align: right;
+}
+.applyBtnWrap a{
+	background: white;
+	border-radius: 50px;
+	color: #0367AF;
+	padding: 10px 30px;
+	font-weight: 500;
+	transition: all .5s ease;
+}
+.applyBtnWrap a:hover{
+	color: #000;
+}
+/*....................................................................
+		***service section start(index page)***
+.....................................................................*/
+.serviceWrap{
+	background: url(../img/bg.png) center bottom no-repeat;
+	background-size: 100%;
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+.serviceheadingWrap h2{
+	color: rgb(2, 103, 175);
+    margin-bottom: 20px;
+	font-size: 30px;
+    font-weight: bold;
+}
+.serviceheadingWrap p{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+.serviceFlexContainer{
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	margin: 0 auto;
+}
+.serviceFlexContainer .serviceItem{
+	width: 33%;
+	text-align: center;
+	background: white;
+	border-radius: 25px;
+    padding: 25px 20px;
+	padding-bottom: 20px;
+	border: 2px solid #0367AF;
+	height: 100%;
+	transition: all .5s ease;
+}
+.serviceFlexContainer .serviceItem:hover{
+	background: #0367AF;
+	border: 2px solid #fff;
+	cursor: pointer;
+} 
+.serviceFlexContainer .one{
+	margin-right: 20px;
+}
+.serviceFlexContainer .three{
+	margin-left: 20px;
+}
+.serviceItem h4{
+	color: black;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 15px;
+	font-family: 'SolaimanLipi';
+}
+.serviceItem:hover h4{
+	color: white;
+}
+.serviceItem p{
+	color: black;
+	font-family: 'SolaimanLipi';
+	text-align: left;
+	margin-bottom: 15px;
+}
+.serviceItem:hover p{
+	color: white;
+}
+.serviceItem span i{
+	color: black;
+    font-size: 33px;
+    margin-bottom: 10px;
+	text-align: center;
+}
+.serviceItem:hover span i{
+	color: white;
+}
+/*...........middleCarouselWrap code start..........*/
+@media (min-width:768px) {
+  .carouselWrap .carousel-item-right.active, .carouselWrap .carousel-item-next {
+      transform: translateX(50%);
+  }
+  .carouselWrap .carousel-item-left.active, .carouselWrap .carousel-item-prev {
+      transform: translateX(-50%);
+  }
+}
+/* large - display 3 */
+
+@media (min-width:992px) {
+  .carouselWrap .carousel-item-right.active, .carouselWrap .carousel-item-next {
+      transform: translateX(33%);
+  }
+  .carouselWrap .carousel-item-left.active, .carouselWrap .carousel-item-prev {
+      transform: translateX(-33%);
+  }
+}
+
+@media (max-width:768px) {
+
+  .carouselWrap .carouselItem>div {
+      display:none;
+  }
+  .carouselWrap .carouselItem>div:first-child {
+      display:block;
+  }
+  
+}
+
+.carouselWrap .carouselItem.active, .carouselWrap .carousel-item-next, .carouselWrap .carousel-item-prev {
+  display: flex;
+}
+.carouselWrap .carousel-item-right, .carouselWrap .carousel-item-left {
+  transform: translateX(0);
+}
+.mycarouselHeadingWrap h2{
+	font-size: 30px;
+	font-weight: bold;
+	font-family: poppins;
+	margin-bottom: 40px;
+	color: rgb(2, 103, 175);
+}
+/*....................................................................
+		***finance section start(index page)***
+.....................................................................*/
+.financeWrapper{
+	padding-top: 120px;
+	padding-bottom: 100px;
+	background: #CEE1EF;
+}
+.financeWrap{
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	margin: 0 auto;
+}
+.financeWrap .financeItem{
+	background: white;
+	width: 33%;
+	border-radius: 15px;
+    padding: 20px;
+	text-align: center;
+	border: 4px solid #0367AF;
+}
+.financeWrap .one{
+	margin-right: 20px;
+}
+.financeWrap .three{
+	margin-left: 20px;
+}
+.financeWrap .financeItem h4{
+	margin-top: 15px;
+    font-size: 21px;
+    color: #6ec1e4;
+    font-weight: bold;
+}
+.financeWrap .financeItem p{
+    color: #7a7a7a;
+}
+.financeHeading h2{
+	color: white;
+    text-align: center;
+    margin-bottom: 35px;
+	font-size: 30px;
+    font-weight: bold;
+}
+/*....................................................................
+		***counter section start(index page)***
+.....................................................................*/
+
+.counterWrap{
+	background: #0267AF;
+	padding-top: 30px;
+	padding-bottom: 5px;
+}
+.start-counter p{
+	color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.start-counter h4{
+	color: white;
+	font-weight: bold;
+}
+/*....................................................................
+		***review section start(index page)***
+.....................................................................*/
+.reviewSection{
+	padding: 50px 0px;
+	padding-bottom: 90px;
+}
+.sliderheadingWrap center h2{
+	color: #0267AF;
+	font-size: 30px;
+    font-weight: bold;
+}
+.sliderheadingWrap center p{
+	font-size: 16px;
+}
+.sliderHeadingWrap h3{
+	color: #0267AF;
+	font-size: 25px;
+    font-weight: bold;
+	margin-bottom: 30px;
+}
+.slideItemWrap{
+	display: flex;
+	justify-content: space-between;
+}
+.slideItemLeft{
+	margin-right: 10px;
+}
+.slideItemRight{
+	margin-left: 10px;
+}
+.sliderItemInnerRightWrap h6{
+	font-size: 17px;
+    font-family: SolaimanLipi;
+    margin-top: 20px;
+}
+.carousel-indicators{
+	bottom: -65px;
+}
+.carousel-indicators li{
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+}
+.carousel-indicators li.active{
+	background: #689F38;
+}
+.carousel-indicators li{
+	background: #ddd;
+}
+/*....................................................................
+		***footer section start(index page)***
+.....................................................................*/
+.footerBottomWrapper{
+	padding: 12px 0px;
+	background: #0367AF;
+}
+.footerMiddleWrap p{
+	color: #fff;
+	margin-bottom: 0;
+	font-size : 14px;
+	margin-top: 4px;
+	text-align: center;
+}
+.footerSocialIconWrap ul{
+	margin-bottom: 0px;
+}  
+.footerSocialIconWrap ul li a{
+	display: inline-block;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    padding: 3px 6px;
+    font-size: 20px;
+}
+.footerSocialIconWrap ul li a.facebookFooter{
+	background: #246EFD;
+    color: white;
+}
+.footerSocialIconWrap ul li a.linkedinFooter{
+	background: #0DC143;
+    color: white;
+}
+.footerSocialIconWrap ul li a.youtubeFooter{
+	background: #515BD4;
+    color: white;
+}
+.mapInformWrap iframe{
+	border: 0px; 
+	pointer-events: none;
+	width: 100%;
+	max-width: 100%;
+	height: 200px;
+}
+.footerTopWrapper{
+	padding-top: 75px;
+	padding-bottom: 35px;
+	background: #F0EEEE;
+}
+.addressWrap{
+	display: flex;
+}
+.addressWrap{
+	margin-bottom: 17px;
+}
+.addressWrap .address i{
+	margin-right: 18px;
+	color: #007EE5;
+	font-size: 17px;
+	margin-bottom: 17px;
+}
+.addressBottomWrap ul li a i{
+	margin-right: 14px;
+	margin-bottom: 17px;
+	color: #007EE5;
+	font-size: 17px;
+}
+.addressBottomWrap2 ul li a i{
+	margin-right: 7px;
+}
+.addressBottomWrap2 ul li a:hover{
+	letter-spacing: .5px;
+	color: #007EE5;
+}
+.addressBottomWrap2 ul li a:hover i{
+	color: #007EE5;
+}
+.addressBottomWrap2 ul li a i{
+	color: #689f38;
+}
+.addressWrap .addressInformation p{
+	margin-top: -4px;
+	margin-bottom: 0px;
+	line-height: 22px;
+	color: #000;
+}
+.addressBottomWrap ul li a{
+	color: black;
+}
+.headingWrapper h4{
+	color: #0367AF;
+	font-size: 18px;
+    font-weight: 600;
+}
+.linkInformationwrap ul{
+	margin-left: 10px;
+} 
+.linkInformationwrap ul li:not(:last-child){
+	margin-bottom: 5px;
+}
+/*.............................................***backTopButton code start***...........................*/
+.to-top {
+  background: white;
+  position: fixed;
+  bottom: 16px;
+  right:32px;
+  width:45px;
+  height:45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:32px;
+  color:#1f1f1f;
+  text-decoration: none;
+  opacity:0;
+  pointer-events: none;
+  transition: all .4s;
+  box-shadow: 0 1px 4px rgb(0 35 62 / 81%);
+}
+
+.to-top.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+  background: #0AB9F2;
+  color: #fff;
+  font-size: 23px;
+  box-shadow: 0 1px 4px rgb(0 35 62 / 81%);
+}
+/*.............................................***backTopButton code end***...........................*/
+
+/*.............................................***Here end style.css file***...........................*/ 

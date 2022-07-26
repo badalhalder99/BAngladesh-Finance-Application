@@ -1,0 +1,734 @@
+<!--.....................................................
+		File Name: index.html
+...................................................... -->
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<!-- basic -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<!--Moble meta-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<title>Bangladesh Finance &#8211; এখনই সময়</title>
+		<meta name="keywords" content="">
+		
+		<meta name="description" content="">
+		
+		<meta name="author" content="">
+		<meta property="og:url" content="https://bd.finance" />
+		<meta property="og:type" content="website" />
+
+		<!--load font aweresome icon all styles -->
+		<link href="css/all.css" rel="stylesheet"> 
+		
+		<!-- site icons -->
+		<link rel="icon" href="img/" type="image/png" />
+		
+		<!--bootstrap css-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<!-- Site css -->
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<!-- responsive css -->
+		<link rel="stylesheet" href="css/responsive.css" />
+	</head>
+	<body>
+		
+		<!-- header section start	-->
+		<header>
+			<div class="headerTop">
+				<div class="logoItem">
+					<img src="img/logo1.png" alt="" class="img-fluid img1" />
+				</div>
+				<div class="logoItem">
+					<img src="img/mujib.png" alt="" class="img-fluid img2" />
+				</div>
+			</div>
+			<div class="headerBottom">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="menuWrapper">
+								<div class="menuLeft">
+									<!-- desktop menu start	-->
+									<ul class="list-unstyled list-inline desktopUl">
+										<li class="list-inline-item"><a href="#" class="active">হোম</a></li>
+										<li class="list-inline-item"><a href="#">আমাদের সেবাসমূহ </a></li>
+										<li class="list-inline-item"><a href="#">আমাদের সম্পর্কে</a></li>
+										<li class="list-inline-item"><a href="#">কর্পোরেট লোন</a></li>
+										<li class="list-inline-item"><a href="#">যোগাযোগ</a></li>
+									</ul>
+									<!-- desktop menu end	-->
+									
+									<!-- mobile menu start	-->
+									<div class="mobileButton">
+										<a href="#" class="btn" onclick="openNav()">
+											<i class="fas fa-bars"></i>
+										</a>
+									</div>
+									<!--sidepanel code start-->
+									<div id="mySidepanel" class="sidepanel">
+										<div class="closeBtnWrap">
+											<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+										</div>
+										<div class="sidepanelMenuItem">
+											<ul class="list-unstyled">
+												<li><a href="#">হোম</a></li>
+												<li><a href="#">আমাদের সেবাসমূহ </a></li>
+												<li><a href="#">আমাদের সম্পর্কে</a></li>
+												<li><a href="#">কর্পোরেট লোন</a></li>
+												<li><a href="#">যোগাযোগ</a></li>
+											</ul>
+										</div>
+									</div>
+									<!--sidepanel code end-->
+									<!-- mobile menu end	-->
+								</div>
+								<div class="menuRight">
+									<a href="#myModal" class="btn" data-toggle="modal">লগইন</a>
+									<a href="#myModal2" class="btn" data-toggle="modal">রেজিস্টার</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header section end	-->
+		<!-- headerSection modal code start	-->
+		<!-- The Modal 1 code start-->
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header modalHeader">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body modalBody">
+						<div class="form-wrapper">
+							<h3>লগইন</h3>
+							<form>
+								<fieldset>
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="মোবাইল নম্বর (ইংরেজিতে)*" required/>
+									</div>
+									
+									<div class="form-group passwordWrap">
+										<input type="Password" class="form-control" placeholder="পাসওয়ার্ড*" required/>
+										<span><i class="fas fa-eye-slash"></i></span>
+										<a href="#" class="forgetWrap"><small class="form-text">পাসওয়ার্ড ভুলে গেছেন ?</small></a>
+									</div>
+								
+									<div class="form-group">
+										<a href="#" class="btn loginButton" type="submit" >লগইন</a>
+									</div>
+									<div class="form-group">
+										<h6 class="btn noRegistation">আপনার নিবন্ধন করা না থাকলে ?</h6>
+										<a class="registationLink" data-toggle="modal" href="#myModal2">নিবন্ধন করুন</a>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+					<!-- Modal footer -->
+					<div class="modal-footer modalFooter">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- The Modal 1 code end-->
+		<!-- The Modal 2 code start-->
+		<div class="modal fade" id="myModal2">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header modalHeader">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body modalBody">
+						<div class="form-wrapper">
+							<h3>নিবন্ধন</h3>
+							<form>
+								<fieldset>
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="আপনার নাম" required/>
+									</div>
+									<div class="form-group">
+										<select class="form-control formcontrol">
+											<option class="jela">জেলা</option>       
+											<option class="jela">ঢাকা</option>
+											<option class="jela">বরিশাল</option>
+											<option class="jela">ভোলা</option>
+											<option class="jela">কুমিল্লা</option>
+											<option class="jela">গাজীপুর</option>
+											<option class="jela">লালমনিরহাট </option>
+										</select>
+									</div>
+									
+									<div class="form-group">
+										<input type="email" class="form-control" placeholder="ইমেইল (ঐচ্ছিক)" required/>
+									</div>
+									
+									<div class="form-group">
+										<select class="form-control formcontrol">
+											<option>পেশা</option>       
+											<option>ছাত্র </option>
+											<option>চাকরিজীবী</option>
+											<option>উকিল</option>
+											<option>ডাক্তার</option>
+											<option>ব্যবসায়ী</option>
+											<option>কৃষক</option>
+										</select>
+									</div>
+									
+									<div class="form-group">
+										<input type="text" class="form-control" value="+880"/>
+									</div>
+									<div class="form-group passwordWrap">
+										<input type="Password" class="form-control" placeholder="পাসওয়ার্ড*" required/>
+										<span><i class="fas fa-eye-slash"></i></span>
+									</div>
+									
+									<div class="form-group">
+										<a href="#" class="btn loginButton" type="submit" >নিবন্ধন</a>
+									</div>
+									<div class="form-group">
+										<a href="#" class="btn loginButton" type="submit" data-dismiss="modal">বাতিল</a>
+									</div>
+									
+									<div class="form-group">
+										<h6 class="btn noRegistation">আপনার অ্যাকাউন্ট থাকলে?</h6>
+										<a href="#myModal" data-toggle="modal" class="registationLink">লগইন করুন</a>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+					<!-- Modal footer -->
+					<div class="modal-footer modalFooter">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- The Modal 2 code end-->
+		<!-- headerSection modal code end	-->
+		<!-- topSlider section start-->
+		<section>
+			<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="img/slide1.jpg" alt="First slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="img/slide2.jpg" alt="Second slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="img/slide3.jpg" alt="Third slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="img/slide6.jpg" alt="First slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="img/slide5.jpg" alt="Second slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="img/slide6.jpg" alt="Third slide">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- topSlider section end	-->
+		<!-- service section start	-->
+		<section>
+			<div class="serviceWrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="mycarouselHeadingWrap mb-2 text-center">
+								<h2>ক্যাম্পাইন</h2>
+							</div>
+						</div>
+					</div>
+					<!-- multiple item carousel start	-->
+					<div class="row mb-5">
+						<div id="myCarousel" class="carousel slide w-100 mycarousel" data-ride="carousel">	
+							<div class="carousel-inner w-100 carouselWrap" role="listbox">
+								<div class="carousel-item carouselItem active">
+									<div class="col-lg-4 col-md-6">
+										<img class="img-fluid" src="img/1.png">
+									</div>
+								</div>
+								<div class="carousel-item carouselItem">
+									<div class="col-lg-4 col-md-6">
+										<img class="img-fluid" src="img/2.png">
+									</div>
+								</div>
+								<div class="carousel-item carouselItem">
+									<div class="col-lg-4 col-md-6">
+										<img class="img-fluid" src="img/3.png">
+									</div>
+								</div>
+								<div class="carousel-item carouselItem">
+									<div class="col-lg-4 col-md-6">
+										<img class="img-fluid" src="img/4.png">
+									</div>
+								</div>
+								<div class="carousel-item carouselItem">
+									<div class="col-lg-4 col-md-6">
+										<img class="img-fluid" src="img/5.png">
+									</div>
+								</div>
+								<div class="carousel-item carouselItem">
+									<div class="col-lg-4 col-md-6">
+										<img class="img-fluid" src="img/2.png">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- multiple item carousel end	-->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="serviceheadingWrap mb-5 text-center">
+								<h2>আমাদের লোনসমূহ</h2>
+							</div>
+						</div>
+					</div>
+					<div class="row mb-4">
+						<div class="serviceFlexContainer">
+							<div class="serviceItem one">
+								<span><i class="fas fa-user"></i></span>
+								<h4>পার্সোনাল লোন</h4>
+								<p>লোনের পরিমান: সর্বোচ্চ্চ ১০ লক্ষ টাকা।</p>
+								<p>লোনের মেয়াদ: সর্বোচ্চ্চ ১০ বছর।</p>
+								<p>কিস্তি : মাসিক/বাৎসরিক।</p>
+								<p>সুদের হার: ৯%।</p>
+								<p>লোন পেতে সময় : ১ থেকে ৭ দিন। </p>
+								<p>কাগজপত্র: ঋণ গ্রহণকারীর ভোটার আইডি কপি ও ছবি,জামিনদার ও নমিনির ভোটার আইডি কার্ড ও ছবি ,মোবাইল নম্বর,আয়ের প্রমাণপত্র (প্রযোজ্য ক্ষেত্রে)। </p>
+								<p> কিস্তি পরিশোধ ও ঋণ গ্রহণ: অনলাইন এই গ্রহণ ও পরিশোধ করা যাবে।</p>
+							</div>
+							<div class="serviceItem two">
+								<span><i class="fas fa-briefcase"></i></span>
+								<h4>ব্যবসায়ী লোন</h4>
+								<p>লোনের পরিমান: সর্বোচ্চ্চ ৫ লক্ষ টাকা।</p>
+								<p>লোনের মেয়াদ: সর্বোচ্চ্চ ৫ বছর।</p>
+								<p>কিস্তি : মাসিক/বাৎসরিক।</p>
+								<p>সুদের হার: ৭%।</p>
+								<p>লোন পেতে সময় : ১ থেকে ৭ দিন। </p>
+								<p>কাগজপত্র: ঋণ গ্রহণকারীর ভোটার আইডি/ট্রেডলাইসেন্স কপি ও ছবি,জামিনদার ও নমিনী ভোটার আইডি কার্ড ও ছবি ,মোবাইল নম্বর,আয়ের প্রমাণপত্র (প্রযোজ্য ক্ষেত্রে)। </p>
+								<p> কিস্তি পরিশোধ ও ঋণ গ্রহণ: অনলাইন এই গ্রহণ ও পরিশোধ করা যাবে।</p>
+							</div>
+							<div class="serviceItem three">
+								<span><i class="fas fa-passport"></i></span>
+								<h4>প্রবাসী লোন</h4>
+								<p>লোনের পরিমান: সর্বোচ্চ্চ ৫ লক্ষ টাকা।</p>
+								<p>লোনের মেয়াদ: সর্বোচ্চ্চ ৫ বছর।</p>
+								<p>কিস্তি : মাসিক/বাৎসরিক।</p>
+								<p>সুদের হার: ৭%।</p>
+								<p>লোন পেতে সময় : ১ থেকে ৭ দিন। </p>
+								<p>কাগজপত্র: ঋণ গ্রহণকারীর ভোটার আইডি/পাসপোর্ট কপি ও ছবি,জামিনদার ও নমিনির ভোটার আইডি কার্ড ও ছবি ,মোবাইল নম্বর,আয়ের প্রমাণপত্র (প্রযোজ্য ক্ষেত্রে)। </p>
+								<p> কিস্তি পরিশোধ ও ঋণ গ্রহণ: অনলাইন এই গ্রহণ ও পরিশোধ করা যাবে।</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="serviceFlexContainer">
+							<div class="serviceItem one">
+								<span><i class="fas fa-home"></i></span>
+								<h4>বাড়ি লোন</h4>
+								<p>লোনের পরিমান: সর্বোচ্চ্চ ৫ লক্ষ টাকা।</p>
+								<p>লোনের মেয়াদ: সর্বোচ্চ্চ ৫ বছর।</p>
+								<p>কিস্তি : মাসিক/বাৎসরিক।</p>
+								<p>সুদের হার: ৫%।</p>
+								<p>লোন পেতে সময় : ১ থেকে ৭ দিন। </p>
+								<p>কাগজপত্র: ঋণ গ্রহণকারীর ভোটার আইডি/পর্চা কপি ও ছবি,জামিনদার ও নমিনির ভোটার আইডি কার্ড ও ছবি ,মোবাইল নম্বর,আয়ের প্রমাণপত্র (প্রযোজ্য ক্ষেত্রে)। </p>
+								<p> কিস্তি পরিশোধ ও ঋণ গ্রহণ: অনলাইন এই গ্রহণ ও পরিশোধ করা যাবে।</p>
+							</div>
+							<div class="serviceItem two">
+								<span><i class="fas fa-tractor"></i></span>
+								<h4>কৃষি লোন</h4>
+								<p>লোনের পরিমান: সর্বোচ্চ্চ ৫ লক্ষ টাকা।</p>
+								<p>লোনের মেয়াদ: সর্বোচ্চ্চ ৫ বছর।</p>
+								<p>কিস্তি : মাসিক/বাৎসরিক।</p>
+								<p>সুদের হার: ৭%।</p>
+								<p>লোন পেতে সময় : ১ থেকে ৭ দিন। </p>
+								<p>কাগজপত্র: ঋণ গ্রহণকারীর ভোটার আইডি/পর্চা কপি ও ছবি,জামিনদার ও নমিনির ভোটার আইডি কার্ড ও ছবি ,মোবাইল নম্বর,আয়ের প্রমাণপত্র (প্রযোজ্য ক্ষেত্রে)। </p>
+								<p> কিস্তি পরিশোধ ও ঋণ গ্রহণ: অনলাইন এই গ্রহণ ও পরিশোধ করা যাবে।</p>
+							</div>
+							<div class="serviceItem three">
+								<span><i class="fab fa-connectdevelop"></i></span>
+								<h4>উদ্যোক্তা লোন</h4>
+								<p>লোনের পরিমান: সর্বোচ্চ্চ ৫ লক্ষ টাকা।</p>
+								<p>লোনের মেয়াদ: সর্বোচ্চ্চ ৫ বছর।</p>
+								<p>কিস্তি : মাসিক/বাৎসরিক।</p>
+								<p>সুদের হার: ৫%।</p>
+								<p>লোন পেতে সময় : ১ থেকে ৭ দিন। </p>
+								<p>কাগজপত্র: ঋণ গ্রহণকারীর ভোটার আইডির কপি ও ছবি,জামিনদার ও নমিনির ভোটার আইডি কার্ড ও ছবি ,মোবাইল নম্বর,আয়ের প্রমাণপত্র (প্রযোজ্য ক্ষেত্রে)।</p>
+								<p> কিস্তি পরিশোধ ও ঋণ গ্রহণ: অনলাইন এই গ্রহণ ও পরিশোধ করা যাবে।</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- service section end	-->
+		<!-- apply section start	-->
+		<section class="applyWrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<div class="applyheadingWrap">
+							<h2>Take the first step to make your dream true</h2>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="applyBtnWrap">
+							<a href="#myModal2" data-toggle="modal" class="btn">APPLY NOW</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- apply section end	-->
+		<!-- finance section start	-->
+		<section>
+			<div class="financeWrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="financeHeading">
+								<h2>Why Choose Bangladesh Finance</h2>
+							</div>
+							<div class="financeWrap">
+								<div class="financeItem one">
+									<img src="img/icon1.png" alt="" class="img-fluid" />
+									<h4>Strong Shareholding Structure</h4>
+									<p>The shareholding structure of Bangladesh Finance consists of reputed corporate houses, leading industrialist and general public. The majority shareholder of this organization is ANWAR Group</p>
+								</div>
+								<div class="financeItem two">
+									<img src="img/icon2.png" alt="" class="img-fluid" />
+									<h4>Credit Rating</h4>
+									<p>Awarded AA- Credit Rating, which reflects our strong capacity to meet financial promises ensuring high safety to depositors and investors.</p>
+								</div>
+								<div class="financeItem three">
+									<img src="img/icon3.png" alt="" class="img-fluid" />
+									<h4>Complete Financial Solution</h4>
+									<p>Innovative savings and credit facilities,capital market and structured finance services and corporate advisory.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- finance section end	-->
+		<!-- concept section start	-->
+		<section>
+			
+		</section>
+		<!-- concept section end	-->
+		<!-- counter section start	-->
+		<section class="counterWrap">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-2 col-sm-4 col-12 text-center pb-3">
+						<div id="start1" class="start-counter">
+							<h4 class='numscroller' data-min='0' data-max='3' data-delay='1' data-increment='1'>0</h4>
+							<p>Years of experience</p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-sm-4 col-12 text-center pb-3">
+						<div id="start2" class="start-counter">
+							<h4 class='numscroller' data-min='0' data-max='2' data-delay='1' data-increment='1'>0</h4>
+							<p>Number of Branch</p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-sm-4 col-12 text-center pb-3">
+						<div id="start3" class="start-counter">
+							<h4 class='numscroller' data-min='0' data-max='6970' data-delay='3' data-increment='50'>0</h4>
+							<p>Total Family served</p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-sm-4 col-12 text-center pb-3">
+						<div id="start4" class="start-counter">
+							<h4 class='numscroller' data-min='0' data-max='24205' data-delay='3' data-increment='150'>0</h4>
+							<p>Total People served</p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-sm-4 col-12 text-center pb-3">
+						<div id="start5" class="start-counter">
+							<h4 class='numscroller' data-min='0' data-max='8222' data-delay='2' data-increment='50'>0</h4>
+							<p>Loan Portfolio</p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-sm-4 col-12 text-center pb-3">
+						<div id="start6" class="start-counter">
+							<h4 class='numscroller' data-min='0' data-max='9396' data-delay='3' data-increment='35'>0</h4>
+							<p>Deposit Portfolio</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- counter section end	-->
+		<!-- review section start	-->
+		<section class="reviewSection">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="sliderheadingWrap">
+							<center>
+								<h2>What People Say</h2>
+								<p>Here are some of our thoughts that can help you to understand our philosophy better</p>
+							</center>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="sliderHeadingWrap">
+							<h3>News And Publications</h3>
+						</div>
+						<!-- slider for tab,laptop,deskop code start here-->
+						<div class="reviewSliderWrap d-none d-sm-block">
+							<div  id="demoSlide" class="carousel slide" data-ride="carousel">
+								  <!-- Indicators-->
+								<ul class="carousel-indicators">
+									<li data-target="#demoSlide" data-slide-to="0" class="active"></li>
+									<li data-target="#demoSlide" data-slide-to="1"></li>
+									<li data-target="#demoSlide" data-slide-to="2"></li>
+								</ul>
+								  <!-- The slideshow -->
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<div class="slideItemWrap">
+											<div class="slideItemLeft">
+												<div class="sliderItemInnerLeftWrap">
+													<a href="#"><img src="img/1.webp" class="img-fluid" alt=""/></a>
+												</div>
+											</div>
+											<div class="slideItemRight mobileSliderHidden">
+												<div class="sliderItemInnerLeftWrap">
+													<a href="#"><img src="img/1.webp" class="img-fluid" alt=""/></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="slideItemWrap">
+											<div class="slideItemLeft">
+												<div class="sliderItemInnerLeftWrap">
+													<a href="#"><img src="img/1.webp" class="img-fluid" alt=""/></a>
+												</div>
+											</div>
+											<div class="slideItemRight mobileSliderHidden">
+												<div class="sliderItemInnerLeftWrap">
+													<a href="#"><img src="img/1.webp" class="img-fluid" alt=""/></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="slideItemWrap">
+											<div class="slideItemLeft">
+												<div class="sliderItemInnerLeftWrap">
+													<a href="#"><img src="img/1.webp" class="img-fluid" alt=""/></a>
+												</div>
+											</div>
+											<div class="slideItemRight">
+												<div class="sliderItemInnerLeftWrap">
+													<a href="#"><img src="img/1.webp" class="img-fluid" alt=""/></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- slider for tab,laptop,deskop code end here-->
+						<!-- slider for mobile code start here-->
+						<div class="reviewSliderWrap d-block d-sm-none">
+							<div  id="demoSlide" class="carousel slide" data-ride="carousel">
+								  <!-- Indicators-->
+								<ul class="carousel-indicators">
+									<li data-target="#demoSlide" data-slide-to="0" class="active"></li>
+									<li data-target="#demoSlide" data-slide-to="1"></li>
+									<li data-target="#demoSlide" data-slide-to="2"></li>
+									<li data-target="#demoSlide" data-slide-to="4"></li>
+									<li data-target="#demoSlide" data-slide-to="5"></li>
+									<li data-target="#demoSlide" data-slide-to="6"></li>
+								</ul>
+								  <!-- The slideshow -->
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<div class="slideItemWrap">
+											<div class="slideItemLeft">
+												<div class="sliderItemInnerLeftWrap">
+													<a href="#"><img src="img/1.webp" class="img-fluid" alt=""/></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="slideItemWrap">
+											<div class="slideItemLeft">
+												<div class="sliderItemInnerLeftWrap">
+													<a href="#"><img src="img/1.webp" class="img-fluid" alt=""/></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="slideItemWrap">
+											<div class="slideItemLeft">
+												<div class="sliderItemInnerLeftWrap">
+													<a href="#"><img src="img/1.webp" class="img-fluid" alt=""/></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="slideItemWrap">
+											<div class="slideItemLeft">
+												<div class="sliderItemInnerLeftWrap">
+													<a href="#"><img src="img/1.webp" class="img-fluid" alt=""/></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="slideItemWrap">
+											<div class="slideItemLeft">
+												<div class="sliderItemInnerLeftWrap">
+													<a href="#"><img src="img/1.webp" class="img-fluid" alt=""/></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="slideItemWrap">
+											<div class="slideItemLeft">
+												<div class="sliderItemInnerLeftWrap">
+													<a href="#"><img src="img/1.webp" class="img-fluid" alt=""/></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- slider for mobile code end here-->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- review section end	-->
+		<!-- footer section start	-->
+		<footer>
+			<div class="footerTopWrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-sm-6 col-12">
+							<div class="contactWrap">
+								<div class="headingWrapper">
+									<h4>Contact us</h4>
+								</div>
+								<div class="addressWrap">
+									<div class="address">
+										<i class="fas fa-map-marker-alt"></i>
+									</div>
+									<div class="addressInformation">
+										<p>27 Dilkusha(2nd Floor), Dhaka 1000.</p>
+									</div>
+								</div>
+								<div class="addressBottomWrap">
+									<ul class="list-unstyled">
+										<li><a href=""><i class="fas fa-envelope"></i>info@bd.finance</a></li>
+										<li><a href=""><i class="fas fa-phone-alt"></i>16727</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6 col-12">
+							<div class="connectWrap mb-3">
+								<div class="headingWrapper">
+									<h4>Connect With Us</h4>
+								</div>
+								<div class="footerSocialIconWrap">
+									<ul class="list-inline">
+										<li class="list-inline-item mr-2"><a href="#" class="facebookFooter"><i class="fab fa-facebook-f"></i></a></li>
+										<li class="list-inline-item mr-2"><a href="#" class="linkedinFooter"><i class="fab fa-whatsapp"></i></a></li>
+										<li class="list-inline-item"><a href="#" class="youtubeFooter"><i class="fab fa-instagram"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6 col-12">
+							<div class="linkWrap mb-3">
+								<div class="headingWrapper">
+									<h4>Credit Card Network</h4>
+								</div>
+								<div class="linkInformationwrap">
+									<img src="img/credit.JPG" alt="" class="img-fluid" />
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6 col-12">
+							<div class="mapWrap">
+								<div class="headingWrapper">
+									<h4>Payment By</h4>
+								</div>
+								<div class="mapInformWrap">
+									<img src="img/pay.JPG" alt="" class="img-fluid" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footerBottomWrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="footerMiddleWrap">
+								<p>Copyright © 
+									<script type="text/javascript">
+										let year = new Date();
+										let getYear = year.getFullYear();
+										document.write(getYear);
+									</script>
+								Bangladesh Finance. All rights reserved.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer section end	-->
+		<!-- back to top button start	-->
+		<div class="backToTopButtonWrap">
+			<a href="#" class="to-top">
+				<i class="fas fa-chevron-up"></i>
+			</a>
+		</div>
+		<!-- back to top button start	-->
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.6.0.slim.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/numscroller-1.0.js"></script>
+		<!-- script js -->
+		<script src="js/script.js"></script>
+	</body>
+</html>
+<!--...................End Here index.html File......... -->

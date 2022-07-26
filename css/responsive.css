@@ -1,0 +1,339 @@
+/*** 
+
+====================================================================
+  File Name: responsive.css
+====================================================================
+
+***/
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+	/*custom nav responsive code start*/
+	
+	.menuLeft .mobileButton{
+		display: none;
+	}
+	.menuLeft .sidepanel{
+		display: none;
+	}
+	/*custom nav responsive code end*/
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.financeWrap, .serviceFlexContainer{
+		width: 96%;
+	}
+	/*custom nav responsive code start*/
+	.menuLeft .mobileButton{
+		display: none;
+	}
+	.menuLeft .sidepanel{
+		display: none;
+	}
+	/*custom nav responsive code end*/
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	.mapInformWrap iframe{
+		height: 180px;
+	}
+	.footerTopWrapper{
+		padding-top: 75px;
+		padding-bottom: 35px;
+	}
+	.financeWrap, .serviceFlexContainer{
+		width: 100%;
+	}
+	/*custom nav responsive code start*/
+	.menuLeft .mobileButton{
+		display: none;
+	}
+	.menuLeft .sidepanel{
+		display: none;
+	}
+	/*custom nav responsive code end*/
+	.reviewSection{
+		padding-bottom: 70px;
+	}
+	.carousel-indicators{
+		bottom: -60px;
+	}	
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	.mapInformWrap iframe{
+		height: 150px;
+	}
+	.footerTopWrapper{
+		padding-top: 55px;
+		padding-bottom: 35px;
+	}
+	.reviewSection{
+		padding: 45px 0px;
+		padding-bottom: 70px;
+	}
+	.sliderheadingWrap center h2{
+		font-size: 28px;
+	}
+	.sliderheadingWrap center p{
+		font-size: 15px;
+	}
+	.sliderHeadingWrap h3{
+		font-size: 24px;
+	}
+	.financeWrap, .serviceFlexContainer{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.serviceFlexContainer{
+		width: 95%;
+		display: flex;
+		flex-direction: column;
+	}
+	.financeWrap .financeItem, .serviceFlexContainer .serviceItem{
+		width: 100%;
+	}
+	.financeWrap .one, .serviceFlexContainer .one{
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+	.financeWrap .three, .serviceFlexContainer .three{
+		margin-left: 0px;
+	}
+	.financeWrap .two, .serviceFlexContainer .two{
+		margin-bottom: 20px;
+	}
+	.financeHeading h2{
+		font-size: 28px;
+	}
+	.applyheadingWrap h2{
+		text-align: center;
+		margin-bottom: 26px;
+		font-size: 28px;
+	}
+	.applyBtnWrap{
+		text-align: center;
+	}
+	.applyBtnWrap a{
+		padding: 10px 30px;
+	}
+	.applyWrap{
+		padding: 40px 0;
+	}
+	.serviceheadingWrap h2{
+		font-size: 28px;
+	}
+	.serviceheadingWrap p{
+		font-size: 15px;
+		margin-bottom: 30px;
+	}
+	.serviceWrap{
+		margin-bottom: 25px;
+	}
+	.mycarouselHeadingWrap h2{
+		font-size: 26px;
+	}
+	.serviceItem h4{
+		margin-bottom: 25px;
+	}
+	/*custom nav responsive code start*/
+	.menuWrapper .menuLeft ul.desktopUl{
+		display: none;
+	}
+	/*custom nav responsive code end*/
+	.carousel-indicators {
+		bottom: -58px;
+	}	
+}
+@media (max-width: 565px) {
+	.footerMiddleWrap p{
+		font-size : 13px;
+	}
+	.mapInformWrap iframe{
+		height: 200px;
+	}
+	.footerTopWrapper{
+		padding-top: 55px;
+		padding-bottom: 35px;
+	}
+	.footerSocialIconWrap ul{
+		margin-bottom: 15px;
+	} 
+	.reviewSection{
+		padding: 40px 0px;
+	}
+	.sliderheadingWrap center h2{
+		font-size: 24px;
+	}
+	.sliderheadingWrap center p{
+		font-size: 15px;
+	}
+	.sliderHeadingWrap h3{
+		font-size: 22px;
+		text-align: center;
+	}
+	.sliderItemInnerRightWrap2 h6{
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	.reviewSection{
+		padding-bottom: 60px;
+	}
+	.mycarouselHeadingWrap h2{
+		font-size: 24px;
+	}
+	.headerTop .logoItem img.img1{
+		width: 100px;
+		padding-top: 5px;
+	}
+	.headerTop .logoItem img.img2{
+		width: 80px;
+	}
+	.headerTop{
+		padding: 10px;
+	}
+	.serviceItem h4{
+		margin-bottom: 25px;
+	}
+	.serviceFlexContainer{
+		width: 95%;
+		display: flex;
+		flex-direction: column;
+	}
+	/*custom nav responsive code start*/
+	.menuWrapper .menuLeft ul.desktopUl{
+		display: none;
+	}
+	/*custom nav responsive code end*/
+	.carousel-indicators {
+		bottom: -50px;
+	}
+}
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	.footerMiddleWrap p{
+		font-size : 13px;
+	}
+	.mapInformWrap iframe{
+		height: 200px;
+	}
+	.footerTopWrapper{
+		padding-top: 55px;
+		padding-bottom: 35px;
+	}
+	.reviewSection{
+		padding: 40px 0px;
+	}
+	.sliderheadingWrap center h2{
+		font-size: 24px;
+	}
+	.sliderheadingWrap center p{
+		font-size: 14px;
+	}
+	.sliderHeadingWrap h3{
+		font-size: 22px;
+		text-align: center;
+	}
+	.sliderItemInnerRightWrap2 h6{
+		text-align: center;
+		margin-bottom: 5px;
+		font-size :16px;
+	}
+	.reviewSection{
+		padding-bottom: 50px;
+	}
+	.carousel-indicators {
+		bottom: -45px;
+	}
+	.financeHeading h2{
+		font-size: 26px;
+	}
+	.applyheadingWrap h2{
+		font-size: 26px;
+	}
+	.serviceheadingWrap h2{
+		font-size: 26px;
+	}
+	.mycarouselHeadingWrap h2{
+		font-size: 26px;
+	}
+	.mycarouselHeadingWrap h2{
+		font-size: 22px;
+	}
+	.serviceFlexContainer{
+		width: 95%;
+	}
+	.serviceItem{
+		padding: 25px 15px;
+	}
+	/*custom nav responsive code start*/
+	.menuWrapper .menuLeft ul.desktopUl{
+		display: none;
+	}
+	/*custom nav responsive code end*/	
+}
+@media (max-width: 300px) {
+	
+	.footerMiddleWrap p{
+		font-size : 13px;
+	}
+	.mapInformWrap iframe{
+		height: 150px;
+	}
+	.footerTopWrapper{
+		padding-top: 45px;
+		padding-bottom: 25px;
+	}
+	.reviewSection{
+		padding: 30px 0px;
+	}
+	.sliderheadingWrap center h2{
+		font-size: 22px;
+	}
+	.sliderheadingWrap center p{
+		font-size: 14px;
+	}
+	.sliderHeadingWrap h3{
+		font-size: 20px;
+		text-align: center;
+	}
+	.sliderItemInnerRightWrap2 h6{
+		text-align: center;
+		margin-bottom: 5px;
+		font-size :15px;
+	}
+	.reviewSection{
+		padding-bottom: 50px;
+	}
+	.financeHeading h2{
+		font-size: 26px;
+	}
+	.applyheadingWrap h2{
+		font-size: 26px;
+	}
+	.serviceheadingWrap h2{
+		font-size: 26px;
+	}
+	.serviceWrap{
+		margin-bottom: 20px;
+	}
+	.mycarouselHeadingWrap h2{
+		font-size: 22px;
+	}
+	.serviceFlexContainer{
+		width: 95%;
+	}
+	.serviceItem{
+		padding: 20px 10px;
+	}
+	/*custom nav responsive code start*/
+	.menuWrapper .menuLeft ul.desktopUl{
+		display: none;
+	}
+	/*custom nav responsive code end*/
+	
+}
+/*.....................responsive css file.............................*/
